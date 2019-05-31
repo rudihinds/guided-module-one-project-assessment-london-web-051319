@@ -146,7 +146,7 @@ like to train with"
     k = j.to_i-1
     new_coach = Coach.all[k]
     session.update(coach_id: new_coach.id)
-    puts "Great choice, Warrior, #{new_                                                     coach.name} will get you fight ready in no time!"
+    puts "Great choice, Warrior, #{new_coach.name} will get you fight ready in no time!"
     puts "\n"
     end
     # n = 1
@@ -170,6 +170,7 @@ like to train with"
       puts "Poof! All gone!"
       puts "\n"
     end
+    
     def check_slots(fighter)
       puts "Choose a slot"
       puts "1. 08.00-10.00\n2. 10.00-12.00\n3. 12.00-14.00\n4. 14.00-16.00\n5. 16.00-18.00\n6. 18.00-20.00"
