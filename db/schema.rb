@@ -10,9 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 2019_05_30_131550) do
+
+  create_table "Coaches", force: :cascade do |t|
+=======
 ActiveRecord::Schema.define(version: 2019_05_26_122243) do
 
   create_table "coaches", force: :cascade do |t|
+>>>>>>> master
     t.string "name"
     t.string "style"
   end
@@ -24,7 +30,11 @@ ActiveRecord::Schema.define(version: 2019_05_26_122243) do
   create_table "sessions", force: :cascade do |t|
     t.integer "coach_id"
     t.integer "fighter_id"
+<<<<<<< HEAD
+    t.integer "time_slot"
+=======
     t.datetime "datetime"
+>>>>>>> master
   end
 
 end
