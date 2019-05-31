@@ -3,17 +3,18 @@ class Session < ActiveRecord::Base
     belongs_to :coach
     belongs_to :fighter
 
-    def self.all_session
-      self.all
-    end
-
-    def self.one_session
-      self.first
-    end
-
-    def whos_my_coach
-      self.coach.name
-    end
+end
+    # def self.all_session
+    #   self.all
+    # end
+    # 
+    # def self.one_session
+    #   self.first
+    # end
+    #
+    # def whos_my_coach
+    #   self.coach.name
+    # end
   #
   # def initialize(coach, fighter, time)
   #   @coach = coach
@@ -30,5 +31,3 @@ class Session < ActiveRecord::Base
   #   fighter_id = fighter.id
   #   Session.new()
   # end
-
-end

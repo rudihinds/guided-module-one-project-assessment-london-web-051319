@@ -2,13 +2,16 @@ require_relative '../config/environment'
 
   cli = CommandLineInterface.new
   cli.greet
+  cli.check_slots
   # cli.get_name
-  name = gets.chomp
-  puts "GREAT! Ok master #{name},"
-  new_fighter = cli.get_user(name)
-  cli.run
-  cli.create_session(new_fighter)
-  cli.options(new_fighter)
+  # name = gets.chomp
+  # puts "\n"
+  # puts "GREAT! Ok master #{name},"
+  # puts "\n"
+  # new_fighter = cli.get_user(name)
+  # puts "We are going to find you a specialist combat coach who can tailor things around exactly what you need."
+  # cli.create_session(new_fighter)
+  # cli.options(new_fighter)
 
 
   # choice = gets.chomp

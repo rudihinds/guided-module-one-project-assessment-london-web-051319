@@ -8,9 +8,9 @@ class Fighter < ActiveRecord::Base
     fighter
   end
 
-  def self.create_new_session(coach_name, time, fighter)
+  def self.create_new_session(coach_name, fighter)
     coach = Coach.find_by(name: coach_name)
-    Session.create(coach_id: coach.id, fighter_id: fighter.id, datetime: time)
+    Session.create(coach_id: coach.id, fighter_id: fighter.id)
   end
   # rudi
   # "Ricardo Liborio"

@@ -1,0 +1,31 @@
+class Coaches < ActiveRecord::Migration[5.2]
+  def change
+    create_table :coaches do |t|
+      t.string :name
+      t.string :style
+    end
+  end
+end
+
+class CreateFighters < ActiveRecord::Migration[5.2]
+  def change
+    create_table :fighters do |t|
+      t.string :name
+    end
+  end
+end
+
+class CreateSessions < ActiveRecord::Migration[5.2]
+  def change
+    create_table :sessions do |t|
+      t.integer :coach_id
+      t.integer :fighter_id
+    end
+  end
+end
+
+class AddDateTimeToSessions < ActiveRecord::Migration[5.2]
+  def change
+    add_column :sessions, :datetime, :datetime
+  end
+end

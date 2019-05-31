@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_26_122243) do
+ActiveRecord::Schema.define(version: 2019_05_30_131550) do
 
-  create_table "coaches", force: :cascade do |t|
+  create_table "Coaches", force: :cascade do |t|
     t.string "name"
     t.string "style"
   end
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2019_05_26_122243) do
   create_table "sessions", force: :cascade do |t|
     t.integer "coach_id"
     t.integer "fighter_id"
-    t.datetime "datetime"
+    t.integer "time_slot"
   end
 
 end
